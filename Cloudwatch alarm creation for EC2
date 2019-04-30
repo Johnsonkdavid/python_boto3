@@ -1,5 +1,5 @@
 import boto3
-# importing time module
+#importing time module
 import time
 
 print("Function is sleeeping for 5 minutes")
@@ -11,7 +11,7 @@ client = boto3.client('cloudwatch')
 ec2client = boto3.client('ec2')
 def lambda_handler(event, context):
     id=event[u'detail'][u'EC2InstanceId']
-    print id
+    ##id is a variable which will store  ec2 instance id
     response = client.list_metrics(
     Namespace='System/Linux',
     MetricName='DiskSpaceUtilization',
