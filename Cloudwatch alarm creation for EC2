@@ -23,7 +23,7 @@ def lambda_handler(event, context):
         ],
     )
     Filesys=response[u'Metrics'][0][u'Dimensions'][2][u'Value']
-    print Filesys
+    ##Filesys is a variable which will store file system of the EC2 disk
     cloudwatch.put_metric_alarm(
     AlarmName='CPU_Utilization' + id,
     AlarmActions=[ 'arn:aws:sns:******************',],
