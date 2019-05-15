@@ -26,3 +26,9 @@ sec_id=(response02[u'AccessKey'][u'SecretAccessKey'])
 stat=(response02[u'AccessKey'][u'Status'])
 output=u_name,acc_id,sec_id,stat
 print(output)
+
+
+
+
+
+##this is a python 2.x code and the modules I imported here is python 2.x module.If you are using python 3.x ,make sure you imported the corret module
