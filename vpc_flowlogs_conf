@@ -39,7 +39,7 @@ for y in val1:
         response = client.create_flow_logs(
 
                 ClientToken='NewFlowLog',
-                DeliverLogsPermissionArn='arn:aws:iam::297140553068:role/cloudwatchagent',
+                DeliverLogsPermissionArn='arn:aws:iam::xxxxxxxxxxxxxxxxxxx:role/cloudwatchagent',
                 LogGroupName='FlowlogGroup',
                 ResourceIds=[
                         y,
